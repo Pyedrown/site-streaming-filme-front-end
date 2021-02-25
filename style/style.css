@@ -52,8 +52,12 @@ form, input[type="submit"], input.text {
     margin-right: auto;
 }
 
-input.text {
+input[type="email"] {
     margin-top: 50px;
+}
+
+
+input.text {
     margin-bottom: 20px;
     border: 2px solid #3AA3E9;
     border-radius: 20px;
@@ -65,12 +69,16 @@ input.text {
     box-sizing: border-box;
 }
 
-input.text, input[type="submit"], a#button-cadastrar {
+input[type="password"], input[type="submit"], a {
+    margin-top: 20px;
+}
+
+input.text, input[type="submit"] {
     width: 300px;
     height: 45px;
 }
 
-input[type="submit"], a#button-cadastrar {
+input[type="submit"] {
     border: none;
     background-color: #3AA3E9;
     color: white;
@@ -83,10 +91,43 @@ input.text::placeholder{
     font-size: 15px;
 }
 
-input.text::placeholder, a#esqueceu-senha {
+a {
     color: #3AA3E9;
+    text-align: center;
 }
 
-a{
-    text-align: center;
+input.text::placeholder:focus {
+    border-color: #b9e3ff
+}
+
+input.text:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    transition: all 0.5s;
+}
+
+/*Adaptações*/
+
+@media screen and (max-width: 425px) {
+    p.big-center {
+        width: 225px;
+        font-size: 30px;
+    }
+
+    form {
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width: 387px) {
+    input.text, input[type="submit"] {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    input.text {
+        /* margin-left:  */
+    }
 }
