@@ -40,36 +40,23 @@ p#logo, p#mensagem {
 form {
     width: 400px;
     height: 500px;
-    margin-top: 100px;
-}
-
-form, input[type="submit"], a#button-cadastrar {
-    display: block;
-}
-
-form, input[type="submit"], input.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
 }
-
-input[type="email"] {
-    margin-top: 50px;
-}
-
 
 input.text {
     margin-bottom: 20px;
     border: 2px solid #3AA3E9;
     border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     padding-left: 20px;
     box-sizing: border-box;
 }
 
-input[type="password"], input[type="submit"], a {
+input[type="submit"], a {
     margin-top: 20px;
 }
 
@@ -94,6 +81,9 @@ input.text::placeholder{
 a {
     color: #3AA3E9;
     text-align: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input.text::placeholder:focus {
@@ -123,11 +113,5 @@ input.text:focus {
 @media screen and (max-width: 387px) {
     input.text, input[type="submit"] {
         width: 250px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    input.text {
-        /* margin-left:  */
     }
 }
