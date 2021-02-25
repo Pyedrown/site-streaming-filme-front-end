@@ -76,24 +76,26 @@ input[type="submit"] {
 
 input.text::placeholder{
     font-size: 15px;
+    color: #8dccf7;
 }
 
 a {
-    color: #3AA3E9;
+    color: #3AA3E9 ;
     text-align: center;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
 }
 
-input.text::placeholder:focus {
-    border-color: #b9e3ff
-}
-
 input.text:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
     transition: all 0.5s;
+    border-color: #b9e3ff;
+}
+
+form > p {
+    color: #3AA3E9;
 }
 
 /*Adaptações*/
