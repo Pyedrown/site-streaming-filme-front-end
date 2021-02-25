@@ -40,12 +40,15 @@ p#logo, p#mensagem {
 form {
     width: 400px;
     height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form, main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 input.text {
@@ -96,9 +99,28 @@ input.text:focus {
 
 form > p {
     color: #3AA3E9;
+    font-size: 20px;
+    text-align: center; 
+}
+
+.margin-top {
+    margin-top: 50px;
+}
+
+div.columns {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    margin-left: 100px;
 }
 
 /*Adaptações*/
+
+@media screen and (max-width: 450px) {
+    form > p {
+        margin: 0 20px;
+    }
+}
 
 @media screen and (max-width: 425px) {
     p.big-center {
