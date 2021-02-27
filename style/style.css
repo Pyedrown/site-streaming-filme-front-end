@@ -6,6 +6,9 @@ a {
     text-decoration: none;
 }
 
+a {
+    width: 100%;
+}
 
 p#logo {
     border: 1px solid #3AA3E9;
@@ -15,8 +18,8 @@ p#logo {
 }
 
 .big-center {
-    margin-top: 40vh;
     width: 340px;
+    margin-top: 40vh;
     font-size: 50px;
 }
 
@@ -46,8 +49,8 @@ form {
 
 form, main {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -98,9 +101,12 @@ input.text:focus {
 }
 
 form > p {
+    text-align: center; 
+}
+
+form > p, section > p {
     color: #3AA3E9;
     font-size: 20px;
-    text-align: center; 
 }
 
 .margin-top {
@@ -109,9 +115,78 @@ form > p {
 
 div.columns {
     width: 100%;
-    height: 100px;
-    background-color: white;
+    height: 200px;
+    overflow-y: auto;
+    display: flex
+}
+
+section {
+    width: 100%;
+    height: 300px;
     margin-left: 100px;
+}
+
+a.filme-link, a.link-sair {
+    color: initial;
+    margin-left: initial;
+    margin-right: initial;
+    margin-top: initial;
+    width: initial;
+}
+
+a.filme-link, div.filme {
+    float: left;
+}
+
+div.filme {
+    margin: 20px;
+}
+
+div.filme {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    transition: all 0.7s;
+}
+
+div.filme:hover {
+    width: 170px;
+    height: 170px;
+}
+
+i.fa-sign-out-alt {
+    left: 20px;
+    color: #008cff;
+}
+
+i.fa-sign-out-alt, div#usuario {
+    transition: all 0.5s;
+}
+
+i.fa-sign-out-alt:hover {
+    color: #0071ce;
+}
+
+i.fa-sign-out-alt:active {
+    color: #0059a1;
+}
+
+i.fa-sign-out-alt, div#usuario {
+    top: 20px;
+    position: absolute;
+}
+
+div#usuario {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50px;
+    right: 20px;
+}
+
+div#usuario:hover {
+    width: 70px;
+    height: 70px;
 }
 
 /*Adaptações*/
