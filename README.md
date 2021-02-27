@@ -7,7 +7,7 @@
 * [Tecnologias](#tecnologias)
 
 <h4 align="center">
-  Projeto esta em Andamento...
+  Concluido
 </h4>
 
 ## Sobre
